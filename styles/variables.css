@@ -28,11 +28,11 @@
         --text-color-title-section: #FF0070;
         --page-background-image: url("../images/cover-image-dark.png");
     }
-}
 
     .theme-auto .decor {
         display: inline-block;
     }
+}
 
 @media (prefers-color-scheme: light) {
     :root {

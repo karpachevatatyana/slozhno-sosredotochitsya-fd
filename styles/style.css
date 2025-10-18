@@ -333,24 +333,13 @@
 
 .reasons-section .section__title {
     justify-self: start;
-    /* ← выравниваем по левому краю */
     max-width: 236px;
-    /* ← ограничиваем ширину заголовка */
     margin: 0;
-    /* ← убираем лишние отступы */
-}
-
-/* Карточки под заголовком — занимают всю ширину контейнера */
-.reasons-section .card {
-    grid-column: 1 / -1;
-    /* ← карточки растягиваются на обе колонки */
 }
 
 .reasons-section .card {
     grid-column: 1;
-    /* ← каждая карточка в одной колонке */
     width: 100%;
-    /* ← карточки растягиваются на всю ширину контейнера */
 }
 
     .advices-section {
@@ -374,9 +363,7 @@
     .advices-section__subtitle {
         grid-column: 2;
         grid-row: 1;
-        margin-bottom: 10px;
         display: inline-block;
-        width: fit-content;
         align-self: start;
         margin-top: 50px;
         margin-bottom: 0px;
@@ -445,16 +432,15 @@
   .header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* ← Распределяем пространство */
+    justify-content: space-between;
     padding: 20px;
     max-height: 768px;
     min-height: 768px;
     position: relative;
   }
 
-  /* Меню - вверху по центру */
   .header__theme-menu {
-    align-self: center; /* ← Центрируем по горизонтали */
+    align-self: center;
     margin-top: 0px;
   }
 
@@ -469,24 +455,19 @@
     margin-top: 160px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-  /* Описание - в правом нижнем углу */
+
   .header__description {
     max-inline-size: 491px;
-    align-self: flex-end; /* ← Прижимаем к правому краю */
-    margin-bottom: 50px; /* ← Поднимаем уменьшая отступ снизу */
-    /* ИЛИ поднимаем больше: */
-    /* margin-bottom: 20px; */
+    align-self: flex-end;
     margin-bottom: 115px;
     margin-top: 0px;
   }
 
-  /* CONTENT - исправляем отступы */
   .content {
     padding: 60px 20px;
-    gap: 80px; /* Большие отступы между секциями */
+    gap: 80px;
   }
 
-  /* WHY SECTION */
   .why-section {
     grid-template-columns: 315px 1fr;
     gap: 20px;
@@ -501,7 +482,6 @@
     grid-column: 2;
   }
 
-  /* REASONS SECTION - 3 колонки карточек */
   .reasons-section {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -514,38 +494,36 @@
   }
 
   .reasons-section .card {
-    grid-column: auto; /* Каждая карточка в своей колонке */
+    grid-column: auto;
   }
 
  .advices-section {
     grid-template-columns: 315px 1fr;
-    grid-template-rows: auto auto; /* ← 2 строки вместо 1 */
+    grid-template-rows: auto auto;
     gap: 20px;
   }
 
   .advices-section .section__title {
     grid-column: 1;
-    grid-row: 1 / span 2; /* ← Занимает обе строки */
-    align-self: start; /* ← Прижимаем к верху */
+    grid-row: 1 / span 2;
+    align-self: start;
   }
 
   .advices-section__subtitle {
     grid-column: 2;
-    grid-row: 1; /* ← Только первая строка */
+    grid-row: 1;
   }
 
   .advices-section .card {
     grid-column: 2;
-    grid-row: auto; /* ← Каждая карточка в своей строке */
+    grid-row: auto;
   }
 
-  /* Первая карточка начинается сразу после subtitle */
   .advices-section .card:first-of-type {
-    grid-row: 2; /* ← Вторая строка */
-    margin-top: 0; /* ← Убираем лишний отступ */
+    grid-row: 2;
+    margin-top: 0;
   }
 
-  /* GALLERY */
   .gallery {
     margin-block-start: 0;
     margin-block-end: 60px;
