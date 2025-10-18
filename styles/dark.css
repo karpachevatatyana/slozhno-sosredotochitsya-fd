@@ -1,4 +1,4 @@
-.page.theme_dark {
+.theme-dark {
     --bg-color: #000028;
     --text-color: #F1B2CE;
     --accent-color: #FF0070;
@@ -7,14 +7,44 @@
     --text-color-main-title: #DB00FF;
     --text-color-title-section: #FF0070;
     --page-background-image: url("../images/cover-image-dark.png");
+    background-image: var(--page-background-image);
 }
 
-.page.theme_dark .decor {
+.theme-dark .decorated-zone::before {
+    border-block-start: 1px solid var(--accent-color);
+    border-inline-end: 1px solid var(--accent-color);
+}
+
+.theme-dark .decorated-zone::after {
+    border-block-end: 1px solid var(--accent-color);
+    border-inline-start: 1px solid var(--accent-color);
+}
+
+.theme-dark .header__theme-menu-button_active {
+    pointer-events: none;
+    outline: 1px solid var(--accent-color);
+}
+
+.theme-dark .header__theme-menu-button {
+    color: var(--accent-color);
+}
+
+.theme-dark .main-title {
+    text-shadow: 4px 4px 0px var(--accent-color);
+}
+
+.theme-dark .footer-text {
+    text-shadow: 2px 2px 0px var(--accent-color);
+}
+
+.theme-dark .decor {
     display: block;
 }
 
-@media (prefers-color-scheme: dark) {
-    .decor {
-        display: block;
-    }
+.theme-dark .header__theme-menu-button:focus-visible {
+    border-block-end: 1px solid var(--accent-color);
+}
+
+.theme-dark .header__theme-menu-button:hover {
+    border: 1px solid rgba(var(--accent-color-rgb), 0.4);
 }
