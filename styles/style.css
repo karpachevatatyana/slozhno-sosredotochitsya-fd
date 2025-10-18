@@ -425,9 +425,6 @@
 }
 
 @media (min-width: 1024px) {
-  .page {
-    max-height: 768px;
-  }
   
   .header {
     display: flex;
