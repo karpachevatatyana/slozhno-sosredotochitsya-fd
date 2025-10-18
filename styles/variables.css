@@ -5,7 +5,17 @@
     --page-background-size: cover;
     --page-background-attachment: fixed;
     --content-padding: 10px;
+    --bg-color: #000028;
+    --text-color: #F1B2CE;
+    --accent-color: #FF0070;
+    --accent-color-rgb: 255, 0, 112;
+    --text-color-title: #000028;
+    --text-color-main-title: #DB00FF;
+    --text-color-title-section: #FF0070;
+    --page-background-image: url("../images/cover-image-dark.png");
 }
+
+
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -20,6 +30,10 @@
     }
 }
 
+    .theme-auto .decor {
+        display: inline-block;
+    }
+
 @media (prefers-color-scheme: light) {
     :root {
         --bg-color: #FFF1F7;
@@ -32,6 +46,10 @@
         --page-background-image: url("../images/cover-image-light.png");
     }
 }
+
+    .theme-auto .decor {
+        display: none;
+    }
 
 @media (min-width: 768px) {
     :root {
