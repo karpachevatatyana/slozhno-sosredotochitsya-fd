@@ -201,10 +201,6 @@
     pointer-events: none;
 }
 
-.header__theme-menu-button {
-    color: var(--accent-color);
-}
-
 .theme-light .header__theme-menu-button {
     color: var(--text-color);
 }
@@ -215,10 +211,6 @@
     }
 }
 
-.header__theme-menu-button:hover {
-    border-color: rgba(var(--accent-color-rgb), 0.4);
-}
-
 .theme-light .header__theme-menu-button:hover {
     border-color: rgba(50, 49, 45, 0.4);
 }
@@ -227,11 +219,6 @@
     .theme-auto .header__theme-menu-button:hover {
         border-color: rgba(50, 49, 45, 0.4);
     }
-}
-
-.header__theme-menu-button:focus-visible {
-    border-color: transparent;
-    border-block-end: 1px solid var(--accent-color);
 }
 
 .theme-light .header__theme-menu-button:focus-visible {
@@ -358,7 +345,6 @@
     margin: 0;
 }
 
-/* Стили для планшетов (768px - 1023px) */
 @media (768px <= width < 1024px) {
     .header {
         padding: 20px;
@@ -390,7 +376,6 @@
         gap: 30px;
     }
 
-    /* Стили для why-section (первая секция) */
     .why-section {
         grid-template-columns: 236px 1fr;
         gap: 20px;
@@ -407,7 +392,6 @@
         grid-column: 2;
     }
 
-    /* Стили для reasons-section (вторая секция) */
     .reasons-section {
         display: grid;
         grid-template-columns: 1fr;
@@ -427,7 +411,6 @@
         width: 100%;
     }
 
-    /* Стили для advices-section (третья секция) */
     .advices-section {
         grid-template-columns: 236px 1fr;
         gap: 20px;
@@ -509,7 +492,6 @@
     }
 }
 
-/* Стили для десктопа (1024px и больше) */
 @media (min-width: 1024px) {
     .header {
         height: 768px;
@@ -551,7 +533,6 @@
         gap: 80px;
     }
 
-    /* Стили для why-section (первая секция) */
     .why-section {
         grid-template-columns: 315px 1fr;
         gap: 20px;
@@ -566,7 +547,6 @@
         grid-column: 2;
     }
 
-    /* Стили для reasons-section (вторая секция) */
     .reasons-section {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -582,7 +562,6 @@
         grid-column: auto;
     }
 
-    /* Стили для advices-section (третья секция) */
     .advices-section {
         grid-template-columns: 315px 1fr;
         grid-template-rows: auto auto;
