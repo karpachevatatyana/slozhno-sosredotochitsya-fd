@@ -8,3 +8,16 @@
     --text-color-title-section: #353430;
     --page-background-image: url("../images/cover-image-light.png");
 }
+
+@media (prefers-color-scheme: light) {
+    .theme-auto {
+        --bg-color: #FFF1F7;
+        --text-color: #353430;
+        --accent-color: #FF8DCB;
+        --accent-color-rgb: 255, 141, 203;
+        --text-color-title: #353430;
+        --text-color-main-title: #FFC2E6;
+        --text-color-title-section: #353430;
+        --page-background-image: url("../images/cover-image-light.png");
+    }
+}

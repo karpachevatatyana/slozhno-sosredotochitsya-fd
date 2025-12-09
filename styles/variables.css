@@ -1,21 +1,16 @@
 :root {
     --font-family: 'IBM Plex Mono', monospace;
-    --page-background-repeat: no-repeat;
-    --page-background-position: center;
-    --page-background-size: cover;
     --content-padding: 10px;
-    --bg-color: #000028;
-    --text-color: #F1B2CE;
-    --accent-color: #FF0070;
-    --accent-color-rgb: 255, 0, 112;
-    --text-color-title: #000028;
-    --text-color-main-title: #DB00FF;
-    --text-color-title-section: #FF0070;
-    --page-background-image: url("../images/cover-image-dark.png");
 }
 
 @media (min-width: 768px) {
     :root {
+        --content-padding: 20px;
+    }
+    
+    .theme-auto,
+    .theme-light,
+    .theme-dark {
         --content-padding: 20px;
     }
 }

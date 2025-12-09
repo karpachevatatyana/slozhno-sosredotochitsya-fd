@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="ru" class="page theme-auto">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light">
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
-    <link rel="stylesheet" href="./styles/variables.css">
-    <link rel="stylesheet" href="./styles/globals.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/dark.css">
-    <link rel="stylesheet" href="./styles/light.css">
-    <title>Сложно сосредоточиться</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light">
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="icon" href="./images/favicon.ico" sizes="any" />
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+  <!-- ПРАВИЛЬНЫЙ ПОРЯДОК: globals.css после variables.css -->
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/globals.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/dark.css">
+  <link rel="stylesheet" href="./styles/light.css">
+  <title>Сложно сосредоточиться</title>
 </head>
 
 <body class="page">
@@ -24,13 +25,13 @@
         <nav class="header__theme-menu">
             <ul class="header__theme-menu-list">
                 <li class="header__theme-menu-item">
-                    <button class="header__theme-menu-button header__theme-menu-button_type_light">день</button>
+                    <button class="header__theme-menu-button header__theme-menu-button_type_light" data-theme="light">день</button>
                 </li>
                 <li class="header__theme-menu-item">
-                    <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>авто</button>
+                    <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" aria-disabled="true" data-theme="auto">авто</button>
                 </li>
                 <li class="header__theme-menu-item">
-                    <button class="header__theme-menu-button header__theme-menu-button_type_dark">неон</button>
+                    <button class="header__theme-menu-button header__theme-menu-button_type_dark" data-theme="dark">неон</button>
                 </li>
             </ul>
         </nav>
@@ -41,7 +42,7 @@
         </p>
     </header>
     <main class="content">
-        <section class="why-section">
+        <section class="content-section why-section">
             <h2 class="section__title">Почему сосредоточиться так сложно</h2>
             <article class="card">
                 <h3 class="card__title title-decor">Многозадачность</h3>
@@ -56,7 +57,7 @@
                 </p>
             </article>
         </section>
-        <section class="reasons-section">
+        <section class="content-section reasons-section">
             <h2 class="section__title">Что снижает концентрацию внимания?</h2>
             <article class="card">
                 <h3 class="card__title title-decor">Многозадачность</h3>
@@ -73,11 +74,11 @@
             <article class="card">
                 <h3 class="card__title title-decor">Гаджеты</h3>
                 <p class="card__text">
-                    Да-да, это та самая ситуация, когда на экране ноутбука — код, в наушниках — подкаст, а на компьютере фоном — ещё и видео с забавными утятами. В результате мозг пытается переключиться с одной задачи на другую — и просто не может. А чтобы вернуться к состоянию полной концентрации, человеку в среднем нужно 20 минут. Вот и получается, что чем больше времени мы проводим в гаджетах, тем больше времени затем нужно, чтобы вернуться к работе.
+                    Да-да, это та самая ситуация, когда на экране ноутбука — код, в наушниках — подкаст, а на компьютере фоном — ещё и видео с забавными утятами. В результате мозг пытается переключиться с одной задачи на другой — и просто не может. А чтобы вернуться к состоянию полной концентрации, человеку в среднем нужно 20 минут. Вот и получается, что чем больше времени мы проводим в гаджетах, тем больше времени затем нужно, чтобы вернуться к работе.
                 </p>
             </article>
         </section>
-        <section class="advices-section">
+        <section class="content-section advices-section">
             <h2 class="section__title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
             <h3 class="advices-section__subtitle title-decor">5 простых (на самом деле не очень) советов</h3>
 
@@ -113,7 +114,8 @@
             </article>
         </section>
         <section class="gallery">
-            <h3 class="gallery__title title-decor">А можно в картинках?</h3>
+            <!-- ИСПРАВЛЕНО: h2 вместо h4 -->
+            <h2 class="gallery__title title-decor">А можно в картинках?</h2>
             <div class="gallery__grid">
                 <div class="gallery__item gallery__item_sunset">
                     <img src="./images/sunset.png" alt="Красивый красный закат на фоне гор" class="gallery__image" loading="lazy">
@@ -136,7 +138,7 @@
     <footer class="footer decorated-zone">
         <h2 class="footer__title">focus</h2>
     </footer>
-    <script src="./scripts/script.js" defer></script>
+        <script src="./scripts/script.js" defer></script>
 </body>
 
 </html>

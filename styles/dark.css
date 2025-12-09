@@ -1,3 +1,4 @@
+:root,
 .theme-dark {
     --bg-color: #000028;
     --text-color: #F1B2CE;
@@ -7,4 +8,7 @@
     --text-color-main-title: #DB00FF;
     --text-color-title-section: #FF0070;
     --page-background-image: url("../images/cover-image-dark.png");
+}
+
+.theme-auto {
 }
