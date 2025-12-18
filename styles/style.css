@@ -201,6 +201,7 @@
     align-self: center;
     max-inline-size: 364px;
     font-weight: 700;
+    padding-right: var(--content-padding, 10px);
 }
 
 .content {
