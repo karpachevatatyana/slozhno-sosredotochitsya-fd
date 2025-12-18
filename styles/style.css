@@ -200,7 +200,6 @@
     align-self: center;
     max-inline-size: 364px;
     font-weight: 700;
-    padding-right: var(--content-padding, 10px);
 }
 
 .content {
@@ -312,7 +311,7 @@
     }
 
     .content {
-        padding: 60px 20px;
+        padding: 60px var(--content-padding);
         gap: 30px;
     }
 
