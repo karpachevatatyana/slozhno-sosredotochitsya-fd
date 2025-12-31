@@ -1,11 +1,14 @@
 :root {
     --font-family: 'IBM Plex Mono', monospace;
     --content-padding: 10px;
+
+    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
 @media (min-width: 768px) {
     :root {
         --content-padding: 20px;
+        --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
     
     .theme-auto,
@@ -13,4 +16,10 @@
     .theme-dark {
         --content-padding: 20px;
     }
+}
+
+@media (min-width: 1024px) {
+    :root {
+    --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    }     
 }
