@@ -301,7 +301,7 @@
     }
 
     .main-title {
-        font-size: 120px;
+        font-size: var(--title-font-size);
         margin-inline-start: -20px;
     }
 
@@ -458,7 +458,7 @@
     .main-title {
         margin-inline-start: -20px;
         align-self: center;
-        font-size: 157px;
+        font-size: var(--title-font-size);
     }
 
     .header__description {
