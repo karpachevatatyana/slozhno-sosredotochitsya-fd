@@ -10,4 +10,5 @@
     --button-text-color: #FF0070;
     --button-border-color: #FF0070;
     --decor-display: inline-block;
+    --corner-color: var(--accent-color);
 }

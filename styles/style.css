@@ -35,15 +35,15 @@
 .decorated-zone::before {
     inset-inline-end: var(--content-padding);
     inset-block-start: var(--content-padding);
-    border-block-start: 1px solid var(--accent-color);
-    border-inline-end: 1px solid var(--accent-color);
+    border-block-start: 1px solid var(--corner-color);
+    border-inline-end: 1px solid var(--corner-color);
 }
 
 .decorated-zone::after {
     inset-inline-start: var(--content-padding);
     inset-block-end: var(--content-padding);
-    border-block-end: 1px solid var(--accent-color);
-    border-inline-start: 1px solid var(--accent-color);
+    border-block-end: 1px solid var(--corner-color);
+    border-inline-start: 1px solid var(--corner-color);
 }
 
 .card {
@@ -188,7 +188,7 @@
     color: var(--text-color-main-title);
     text-shadow: 4px 4px 0 var(--accent-color);
     font-family: var(--font-family);
-    font-size: 116px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     font-weight: 700;
     line-height: 0.825;
     margin: 0;
